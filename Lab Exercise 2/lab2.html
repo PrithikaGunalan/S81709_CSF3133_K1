@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Profile Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+        <h1>My Personal Profile Page</h1>
+            <a href="#about">| About Me</a> |
+            <a href="#details">Personal Information Table</a> |
+            <a href="#form-section">Information Form</a> |
+        
+       
+    </nav>
+     <hr>
+    </header>
+    <section id="about">
+        <article>
+             <h2>About Me</h2>
+            <p>My name is Prithika. I am currently studying Bachelor of Computer Science with Maritime Informatics (Honours) at University Malaysia Terengganu (UMT). My hobbies are listening to music, playing badminton and watching movies. And also in my free time i spend my time with my family and close friends.</p>
+        </article>  
+
+    </section>
+    
+    
+    <section id="details">
+         <article>
+            <h2>Personal Information Table</h2>
+            <table border="2">
+                <tr>
+                    <th>Attribute</th>
+                    <th>Details</th>
+                    <th>Category</th>
+                </tr>
+                <tr>
+                    <td>Full Name</td>
+                    <td>Prithika Gunalan</td>
+                    <td>Identity</td>
+                </tr>
+                <tr>
+                    <td>Occupation</td>
+                    <td>Undergraduate Student</td>
+                    <td>Education</td>
+                </tr>
+                <tr>
+                    <td>Field of Study</td>
+                    <td>Computer Science</td>
+                    <td>Academic</td>
+                </tr>       
+            </table>
+        </article>
+    </section >
+
+    <section>
+        <article>
+            <h2>User Information Form</h2>
+            <form action="form_section" method="post">
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="gender">Gender: </label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male </label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <label>Favorite Hobbies:</label><br>
+                <input type="checkbox" id="music" name="hobbies" value="music">
+                <label for="music">Listening to Music</label><br>
+                <input type="checkbox" id="badminton" name="hobbies" value="badminton">
+                <label for="badminton">Playing Badminton</label><br>
+                <input type="checkbox" id="movies" name="hobbies" value="movies">
+                <label for="movies">Watching Movies</label><br><br>
+
+                <label for="subject">Choose Favourite Subject:</label><br>
+                <select name="subject" id="subject">
+                    <option value="cs">Computer Science</option>
+                    <option value="maritime">Maritime Informatics</option>
+                    <option value="software">Software Engineering</option>
+                </select><br><br>
+
+                <input type="submit" value="Submit Information">
+
+                
+            </form>
+
+        </article>
+    </section>
+    <hr>
+
+    <footer>
+        <p>Copyright &copy; 2026 Personal Web Page. All rights reserved.</p>
+    </footer>
+       
+
+</body>
+</html>
