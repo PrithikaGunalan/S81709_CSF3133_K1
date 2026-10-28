@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming Workshop 2026 - Faculty Event</title>
+</head>
+<body>
+    <!--Header Section-->
+    <header>
+        <h1>Faculty Programming Workshop 2026</h1>
+        <p>Empowering the future generation of developers by hands on coding. Coding field is joy and playful.</p>
+    </header>
+    <!--Navigation Bar-->
+        <nav>
+            <a href="#about">| About Event</a> |
+            <a href="#schedule">Schedule Table</a> |
+            <a href="#register">Registration Form</a> |
+    </nav>
+     <hr>
+    <!--About Section-->
+    <section id="about">
+        <h2>About The Event</h2>
+        <article>
+            <h3>Keynote Speaker: Dr. Nurul Natasha</h3>
+            <p>Dr. Nurul Natasha is an industry expert in Data Analytics and artificial Intelligence, bringing years of practical expert in machine learning model development and data analytics to guide student on technology trend and future career opportunities.  </p>
+        </article>  
+        <article>
+            <h3>Activity Highlight: Data Analytics Challenge</h3>
+            <p>This session participants explore and learn real-world datasets using Python libraries to uncover meaningful patterns and build data models. This Challenge will take 3 hours complete challenge.</p>
+        </article>
+    </section>
+    
+    <!--Schdule Section-->
+    <section id="schedule">
+        <h2>Event Schedule Table</h2>
+            <table border="1">
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Venue</th>
+                    <th>Person in Charge</th>
+                </tr>
+                <tr>
+                    <td>8:30am - 9:00am</td>
+                    <td>Registration & Breakfast</td>
+                    <td>Main Lobby</td>
+                    <td>Sekretariat</td>
+                </tr>
+                <tr>
+                    <td>9:00am - 10:30am</td>
+                    <td>Opening Ceremony & Keynote</td>
+                    <td rowspan="2">Auditorium A</td>
+                    <td>Dr. Nurul Natasha</td>
+                </tr>
+                <tr>
+                    <td>10:30am - 12:30pm</td>
+                    <td>Advanced Web Development Session</td>
+                    <td>Mr. John Doe</td>
+                </tr>       
+                <tr>
+                    <td>12:30pm - 14:00pm</td>
+                    <td colspan="3">Lunch Break & Networking</td>
+                </tr>
+                <tr>
+                    <td>14:00pm - 16:30pm</td>
+                    <td>Opening Ceremony & KeynotData Analytics Challenge</td>
+                    <td >Computer Lab 2</td>
+                    <td>Dr. Nurul Natasha</td>
+                </tr>
+                <tr>
+                    <td>16:30pm - 17:00pm</td>
+                    <td>Closing & Prize Giving Ceremony</td>
+                    <td>Auditorium A</td>
+                    <td>Dean of Faculty</td>
+            </tr>
+            </table>
+    </section >
+
+    <!--Resistration Form-->
+    <section>
+            <h2>Registration Form</h2>
+            <form action="register.html" method="post">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+
+                <label for="matric">Matric Number :</label>
+                <input type="text" id="matric" name="matric" required><br><br>
+
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email" required><br><br>
+                
+                <!--Radio Buttons-->
+                <label> Year of Study</label><br>
+                <input type="radio" id="year1" name="year_study" value="Year 1">
+                <label for="year1">Year 1 </label><br>
+                <input type="radio" id="year2" name="year_study" value="Year 2">
+                <label for="year2">Year 2 </label><br>
+                <input type="radio" id="year3" name="year_study" value="Year 3">
+                <label for="year3">Year 3 </label><br>
+                <input type="radio" id="year4" name="year_study" value="Year 4">
+                <label for="year4">Year 4 </label><br><br>
+                
+                <!--Checkboxes-->
+                <label>Session to Join</label><br>
+                <input type="checkbox" id="sess1" name="sessions" value="keynote">
+                <label for="sess1">Keynote Speech</label><br>
+                <input type="checkbox" id="sess2" name="sessions" value="WebDev">
+                <label for="sess2">Web Development Workshop</label><br>
+                <input type="checkbox" id="sess3" name="sessions" value="Data analytics challenge">
+                <label for="sess3">Data Analytics Challenge</label><br><br>
+
+                <!--Drop-down List-->
+
+                <label for="programme">Programme:</label><br>
+                <select name="programme" id="programme">
+                    <option value="cs">Computer Science</option>
+                    <option value="maritime">Maritime Informatics</option>
+                    <option value="software">Software Engineering</option>
+                    <option value="ds">Data Science</option>
+                </select><br><br>
+
+                <!--Submit Button-->
+                <input type="submit" value="Register">
+            </form>
+    </section>
+    <hr>
+
+    <!--Footer Section-->
+    <footer>
+        <p>Organised by Faculty of Computer Science and Mathematics | Copyright &copy; 2026 .</p>
+    </footer>
+</body>
+</html>
