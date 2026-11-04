@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Golden Campus Bakery Online Order</title>
+    </head>
+    <body>
+        <!--Header Section-->
+        <div id="#header">
+            <h1>Golden Campus Bakery &reg; <span>Baked with Love (',')</span></h1>
+            <p>Welcome to our campus bakery.</p>
+        </div>
+        <hr>
+
+        <!--Navigation Section-->
+        <div id="nav">
+            <a href="#header">| Home</a> |
+            <a href="#menu">Menu</a> |
+            <a href="#content">Order</a> |
+            
+        </div>
+
+        <!--Main Content Section-->
+        <div id="content">
+            <h2>Welcome to Golden Campus Bakery</h2>
+
+            <p>
+                Buy our <strong> delicious</strong> and <em>freshly baked</em> products and enjoy!!. Our price also <span>affordable price</span> for all college students and staffs.
+                <a href="#menu">View our price list</a>.
+            </p>
+
+             <!--Menu Bar Section-->
+            <div id="menu">
+                <h2>Price List Menu</h2>
+                <ul>
+                    <li>Chocolate Cupcakes - RM 3</li>
+                    <li>Vanilla Cupcakes - RM 3</li>
+                    <li>Strawberry Slice cake - RM 5</li>
+                    <li>Blueberry Slice cake - RM 5</li>
+                    <li>Mango Slice cake - RM 5</li>
+                </ul>
+                <p>Order &gt; 10 pieces get a free drink!</p>
+            </div>
+            <hr>
+
+            <h2>Place Your Order</h2>
+
+            <!--Order Form and Price Calculator -->
+            <div id="order">
+                <form oninput="total.value = (Number(cupcakes.value) * 3 + Number(slices.value) * 5).toFixed(2)">
+                    <label for="customer">Customer Name: </label>
+                    <input type="text" id="customer" name="customer" placeholder="Enter your name" required autofocus>
+                    <br><br>
+
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <br><br>
+
+                    <label for="email">Email Address: </label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+
+                    <label for="date">Pick-up Date:</label>
+                    <input type="date" id="date" name="date">
+                    <br><br>
+
+                    <label for="time">Pick-up Time:</label>
+                    <input type="time" id="time" name="time">
+                    <br><br>
+
+                    <label for="flavour">Choose Flovour: </label>
+                    <input type="text" id="flavour" name="flavour" list="flavours">
+                
+                    <datalist id="flavours">
+                        <option value="Chocolate">
+                        <option value="Vanilla">
+                        <option value="Strawberry">
+                        <option value="Blueberry">
+                        <option value="Mango">
+                    </datalist>
+                    <br><br>
+
+                    <label for="icing">Icing Colour:</label>
+                    <input type="color" name="icing" id="icing">
+                    <br><br>
+
+                    <label for="sugar">Sugar Level:</label>
+                    <input type="range" name="sugar" id="sugar" min="1" max="6" step="1">
+                    <br><br>
+
+                    <!--Price Calculator-->
+                    <h2>Price Calculator</h2>
+
+                    <label for="cupcakes">Cupcakes (RM 3 Each): </label>
+                    <input type="number" name="cupcakes" id="cupcakes" min="0" value="0">
+                    <br><br>
+
+                    <label for="slices">Cake Slices (RM 5 Each): </label>
+                    <input type="number" name="slices" id="slices" min="0" value="0">
+                    <br><br>
+
+                    <strong>Total Price: RM <output name="total" for="cupcakes slices">0.00</output></strong>
+                    <br><br>
+
+                    <input type="submit" value="Submit Order">
+                
+                
+                </form>
+
+            </div>
+        </div>
+
+       
+        <hr>
+        <!--Footer Section-->
+        <div id="footer">
+            <p>&copy; 2026 Golden Campus Bakery&reg;. All rights reserved.</p>
+            <p>Contact: GoldenBake@gmail.com | Tel: 04-668 889</p>
+            <p>Thank you for supporting our Bakery (',')</p>
+        </div>
+
+    </body>
+</html>
