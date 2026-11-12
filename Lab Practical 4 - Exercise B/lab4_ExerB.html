@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+
+    <link rel="stylesheet" href="cafe.css">
+</head>
+
+<body>
+
+    <!-- Errors found and corrected:
+
+    Error 1 (Line 7): Incorrect HTML comment syntax inside CSS.
+    Error 2 (Line 9): list-style-type: no is invalid. Changed to none.
+    Error 3 (Lines 13-16): Link pseudo-classes were in the wrong order.
+    Error 4 (Line 17): overlined is invalid. Changed to overline.
+    Error 5 (Line 18): Missing colon after color property.
+    Error 6 (Lines 19-25): Incorrect intro selector and missing closing brace.
+    Error 7 (Line 22): Missing dot before highlight class selector.
+    Error 8 (Lines 42 and 46): Duplicate id="item". Changed to class="menu-item".
+    Error 9 (Line 34): Menu link did not point to the section. Changed to #menu.
+    Error 10 (Line 53): Video element was missing controls.
+    Error 11 (Line 54): Incorrect video MIME type. Changed to video/mp4.
+    Error 12: Viewport meta tag was missing.
+    Error 13: Video caption was missing.
+    Error 14: Feedback form was missing.
+    Error 15: Footer email address was missing.
+    -->
+
+    <!-- Header Section -->
+    <header>
+        <h1>e-Café Campus</h1>
+
+        <p class="intro">
+            Freshly brewed coffee and local delights every day.
+        </p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- Menu Section -->
+        <section id="menu">
+
+            <h2>Today's Menu</h2>
+
+            <article class="menu-item">
+                <h3>Kopi Tarik</h3>
+
+                <p>
+                    Traditional pulled coffee, freshly prepared.
+                </p>
+
+                <p>
+                    Promotion:
+                    <span class="old-price">RM 4.50</span>
+                    <span class="highlight">RM 3.50</span>
+                </p>
+            </article>
+
+            <article class="menu-item">
+                <h3>Nasi Lemak</h3>
+
+                <p>
+                    Fragrant coconut rice served with traditional sides.
+                </p>
+
+                <p>
+                    Promotion:
+                    <span class="old-price">RM 6.50</span>
+                    <span class="highlight">RM 5.00</span>
+                </p>
+            </article>
+
+        </section>
+
+        <!-- Video Section -->
+        <section id="video">
+
+            <h2>Watch Our Story</h2>
+
+            <figure>
+                <video controls width="400" height="300">
+
+                    <source src="cafe.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+
+                </video>
+
+                <figcaption>
+                    Discover the food and atmosphere at e-Café Campus.
+                </figcaption>
+            </figure>
+
+        </section>
+
+        <!-- Feedback Form Section -->
+        <section id="feedback">
+
+            <h2>Customer Feedback</h2>
+
+            <form class="feedback-form" action="#" method="post">
+
+                <label for="customer-name">Name:</label>
+
+                <input type="text"
+                       id="customer-name"
+                       name="name"
+                       required>
+
+                <label for="customer-email">E-mail:</label>
+
+                <input type="email"
+                       id="customer-email"
+                       name="email"
+                       required>
+
+                <p>Visit Type:</p>
+
+                <label>
+                    <input type="radio"
+                           name="visit-type"
+                           value="Dine-in"
+                           required>
+                    Dine-in
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="visit-type"
+                           value="Take-away">
+                    Take-away
+                </label>
+
+                <p>Favourite Items:</p>
+
+                <label>
+                    <input type="checkbox"
+                           name="favourite"
+                           value="Kopi Tarik">
+                    Kopi Tarik
+                </label>
+
+                <label>
+                    <input type="checkbox"
+                           name="favourite"
+                           value="Nasi Lemak">
+                    Nasi Lemak
+                </label>
+
+                <label>
+                    <input type="checkbox"
+                           name="favourite"
+                           value="Tea">
+                    Tea
+                </label>
+
+                <button type="submit">Submit Feedback</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+
+        <p>&copy; 2026 e-Café Campus</p>
+
+        <address>
+            E-mail:
+            <a href="mailto:ecafe@example.com">
+                ecafe@example.com
+            </a>
+        </address>
+
+    </footer>
+
+</body>
+</html>
