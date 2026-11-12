@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Paws Pet Adoption Centre</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            text-decoration: overline;
+            color: #5D4037;
+        }
+
+        h2 {
+            text-decoration: underline;
+            color: #8D6E63;
+        }
+
+        #welcome {
+            background-color: #FBE9E7;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .highlight {
+            color: #D84315;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Happy Paws Pet Adoption Centre</h1>
+        <p>Give a loving home to a pet in need.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#welcome">Home</a></li>
+            <li><a href="#pets">Our Pets</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#adoption">Adoption Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome">
+        <h2>Welcome to Happy Paws</h2>
+        <p>
+            Welcome to Happy Paws Pet Adoption Centre!
+            We help abandoned and rescued animals find caring
+            and responsible owners. Every pet deserves love,
+            care and a safe home.
+        </p>
+    </section>
+
+    <!-- Pets Section -->
+    <section id="pets">
+        <h2>Meet Our Lovely Pets</h2>
+
+        <article class="pet-card">
+            <h3>Max - Golden Retriever</h3>
+            <p>
+                Max is a friendly and playful dog who loves
+                outdoor activities and meeting new people.
+            </p>
+            <p class="highlight">Adoption Fee: RM 100</p>
+        </article>
+
+        <article class="pet-card">
+            <h3>Luna - Persian Cat</h3>
+            <p>
+                Luna is a gentle and adorable cat who enjoys
+                relaxing and receiving attention.
+            </p>
+            <p class="highlight">Adoption Fee: RM 80</p>
+        </article>
+
+        <article class="pet-card">
+            <h3>Bunny - Rabbit</h3>
+            <p>
+                Bunny is a cute and active rabbit who loves
+                fresh vegetables and a comfortable environment.
+            </p>
+            <p class="highlight">Adoption Fee: RM 50</p>
+        </article>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Meet Our Rescue Animals</h2>
+
+        <figure>
+            <video width="640" height="360" controls>
+                 <source src="pets.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </video>
+
+            <figcaption>
+                Watch our lovely rescued animals enjoying
+                their time at Happy Paws Pet Adoption Centre.
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Adoption Form Section -->
+    <section id="adoption">
+        <h2>Pet Adoption Interest Form</h2>
+
+        <form class="adoption-form" action="#" method="post">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <p>Gender:</p>
+
+            <label>
+                <input type="radio" name="gender" value="Male">
+                Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="Female">
+                Female
+            </label>
+
+            <p>Favourite Hobbies:</p>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="Playing with pets">
+                Playing with pets
+            </label>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="Walking">
+                Walking
+            </label>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="Photography">
+                Photography
+            </label>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="Volunteering">
+                Volunteering
+            </label>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Happy Paws Pet Adoption Centre. All Rights Reserved.</p>
+
+        <address>
+            Email:
+            <a href="mailto:happypaws@gmail.com">happypaws@gmail.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>
