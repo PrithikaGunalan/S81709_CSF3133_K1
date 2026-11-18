@@ -1,0 +1,109 @@
+/* General Page Styling and Body Background */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("paper.gif");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling with Background Image and Merriweather Heading Font */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("books.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+}
+
+/* Horizontal Navigation Bar */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Navigation Hover and Active Link Effects */
+nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+/* Main Content Layout and Paragraph Readability */
+main {
+  width: 90%;
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Products Table Styling */
+#products {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#products td, #products th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Table Header Styling */
+#products th {
+  background-color: #04AA6D;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* Alternating Row Colours and Row Hover Effect */
+#products tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#products tr:hover {
+  background-color: #ddd;
+}
+
+/* Right-align the Price Column (3rd column) */
+#products td:nth-child(3) {
+  text-align: right;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}

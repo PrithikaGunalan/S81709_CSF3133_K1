@@ -1,0 +1,147 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #FBF7F0;
+    color: #2C2C2C;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* 1. Header with Background image */
+header{
+    background-image: url("header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 65px 15px;
+}
+
+header h1{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 8px;
+}
+
+header p{
+    margin: 0;
+}
+
+/* 2. Horizontal Navigation Bar */
+nav{
+    background-color: #2C2C2C;
+    overflow: hidden;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li{
+    float: left;
+}
+
+nav a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 18px;
+}
+
+nav a:hover{
+    background-color: #111;
+}
+
+nav a.active{
+    background-color: #E67E22;
+}
+
+/* 3. Main Content Section */
+main{
+    width: 90%;
+    max-width: 980px;
+    margin: 25px auto;
+}
+
+section{
+    margin-bottom: 22px;
+}
+
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+section p{
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* 5.Styled table */
+#festival-menu{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+
+#festival-menu th,
+#festival-menu td{
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#festival-menu th{
+    background-color: #E67E22;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#festival-menu tr:nth-child(even){
+    background-color: #FDEBD0;
+}
+
+#festival-menu tr:hover{
+    background-color: #EFE6D8;
+}
+
+/*Align price to right */
+#festival-menu.price{
+    text-align: right;
+}
+
+/* 6.Footer */
+footer{
+    background-color: #EFE6D8;
+    color: #2C2C2C;
+    text-align: center;
+    padding: 16px 10px;
+    font-size:0.85rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px){
+    header{
+        padding:45px 12px;
+    }
+
+    nav li{
+        float: none;
+    }
+
+    nav a{
+        text-align: center;
+    }
+
+    #festival-menu th,
+    #festival-menu td{
+        padding: 7px 5px;
+        font-size: 0.8rem;
+    }
+}
